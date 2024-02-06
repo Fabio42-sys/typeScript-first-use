@@ -33,3 +33,15 @@ function boaNoite(noite: string): void {
 
 const noite: string = "recall";
 boaNoite(noite);
+
+const senha = document.getElementById('senha');
+const secondPass = document.getElementById('senha2');
+const checkbox = document.getElementById('checkbox');
+
+function verificarSenha() {
+  if (senha === secondPass) {
+    window.alert('senhas corretas parabens');
+  } else if (senha != secondPass) {
+    window.alert('senhas não são iguais tente novamente');
+  }
+}
